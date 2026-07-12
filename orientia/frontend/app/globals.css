@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #EDE6D6;
+  color: #1B2A4A;
+}
+
+/* Hairline dossier rule — used to divide sections like a real form */
+.dossier-rule {
+  border-top: 1px solid #C9BFA5;
+}
+
+/* The signature element: a rotated stamp badge used for status/labels
+   across program cards, kanban cards, and the hero. */
+.stamp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  padding: 0.15rem 0.55rem;
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
